@@ -1,0 +1,837 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Wix+Madefor+Text:ital,wght@0,400..800;1,400..800&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Open Sans', sans-serif;
+}
+
+body {
+    background-color: rgb(239 239 237);
+
+}
+
+body,
+html {
+    margin: 0;
+    padding: 0;
+    overflow-x: hidden;
+    /* Prevents horizontal scrolling */
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+/* header {
+    z-index: 1000;
+    position: relative;
+    top: 0;
+
+} */
+
+nav {
+    margin-top: 20px;
+    width: 80vw;
+    padding: 1rem 5%;
+    background-color: white;
+    border-style: none;
+    border-radius: 30px;
+    display: flex;
+    justify-self: center;
+    justify-content: flex-end;
+    align-items: center;
+}
+
+.links li::before {
+    content: '';
+    position: absolute;
+    transform: translate(-50%, -50%);
+    left: 50%;
+    top: 100%;
+    width: 0;
+    height: 2px;
+    background: #f18930;
+    transition-duration: .5s;
+}
+
+.links li:hover::before {
+    width: 70px;
+}
+
+.links a:hover {
+    color: #a58a31;
+    font-size: 1.1rem;
+}
+
+.x {
+    color: goldenrod;
+}
+
+.logo {
+    font-size: 1.6rem;
+    font-weight: 600;
+    margin-right: auto;
+
+
+}
+
+.logo-link {
+    text-decoration: none;
+    color: black;
+}
+
+.links {
+    list-style: none;
+    display: flex;
+    gap: 2rem;
+    margin-right: 2rem;
+    margin-left: 2rem;
+
+}
+
+.links li a {
+    position: relative;
+    font-size: 1.05rem;
+    text-decoration: none;
+    color: black;
+}
+
+.hero-buttons {
+    display: flex;
+    gap: 15px;
+    flex-wrap: wrap;
+}
+
+
+.btn {
+    background-color: rgb(191, 156, 69);
+    color: black;
+    border-radius: 30px;
+    padding: 13px;
+    font-weight: 600;
+    border-style: none;
+}
+
+.hero {
+    width: 80%;
+    display: flex;
+    justify-self: center;
+}
+
+.hero-content {
+    flex: 1;
+    margin-top: 50px;
+}
+
+.content-1 {
+    font-weight: 650;
+    font-size: clamp(2.2rem, 5vw, 3.4rem);
+    line-height: 1.15;
+    flex: 1;
+}
+
+.content-2 {
+    width: 30vw;
+    line-height: 1.6rem;
+    margin-top: 25px;
+    margin-bottom: 25px;
+    font-weight: 500;
+}
+
+.hero-image img {
+    width: 100%;
+    max-width: 500px;
+    height: auto;
+}
+
+.btn-2 {
+    background-color: white;
+    color: black;
+    border-radius: 30px;
+    padding: 10px;
+    font-weight: 600;
+    border-style: solid;
+    border-color: black;
+}
+
+.hero-image :nth-child(1) {
+    width: 500px;
+    height: 500px;
+    display: inline-block;
+    margin-top: 30px;
+}
+
+.section-2 img {
+    width: 100vw;
+    margin-top: 50px;
+
+}
+
+.section-3 {
+    width: 80vw;
+}
+
+.services h2 {
+    display: flex;
+    justify-self: center;
+    font-size: clamp(2rem, 5vw, 2.8rem);
+    ;
+    margin-top: 50px;
+
+}
+
+.section-3 {
+    display: grid;
+    /* grid-template-columns: 1fr 1fr 1fr 1fr;
+     */
+    grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+    width: 80vw;
+    justify-self: center;
+    gap: 20px;
+}
+
+
+.section-3-child {
+    display: flex;
+
+    flex-direction: column;
+    padding-bottom: 20px;
+    background-color: white;
+    height: auto;
+    border-radius: 10px;
+    margin-top: 30px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.4);
+
+    /* Smooth transitions in case you add hover effects later! */
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.section-3-child img {
+    height: 42px;
+    width: 42px;
+    object-fit: contain;
+    margin-left: 15px;
+    margin-top: 15px;
+}
+
+.section-3-child h3 {
+    margin-left: 15px;
+}
+
+.section-3-child p {
+
+    margin-left: 15px;
+    margin-top: 5px;
+    margin-bottom: 25px;
+    font-size: 13px;
+    margin-right: 5px;
+}
+
+
+
+/* Optional Hover Effect to make them feel premium */
+.section-3-child:hover {
+    transform: translateY(-8px);
+
+    box-shadow: 0 20px 40px rgba(165, 138, 49, .18);
+}
+
+
+
+.section-4-header h2 {
+    width: 80vw;
+    text-align: center;
+    /* display: flex; */
+    justify-self: center;
+    font-size: clamp(2rem, 5vw, 2.8rem);
+    margin-top: 50px;
+    margin-bottom: 25px;
+}
+
+.section-4-header p {
+    display: flex;
+    justify-self: center;
+    color: rgb(74, 74, 74);
+    font-weight: bold;
+    font-size: larger;
+
+
+    max-width: 80vw;
+    width: 100%;
+    margin: auto;
+
+
+    text-align: center;
+}
+
+.section-4 {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 24px;
+    width: 80vw;
+    margin: auto;
+}
+
+.section-4-child {
+    background-color: #222222;
+    height: auto;
+    border-radius: 15px;
+    margin-top: 50px;
+    margin-bottom: 20px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.4);
+
+    /* Smooth transitions in case you add hover effects later! */
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+
+
+}
+
+.section-4-child img {
+    height: 60px;
+    width: 60px;
+    height: 60px;
+    object-fit: contain;
+    margin-left: 15px;
+    margin-top: 15px;
+
+}
+
+.section-4-child svg {
+    height: 60px;
+    margin-left: 15px;
+    margin-top: 15px;
+
+}
+
+.section-4-child svg path {
+    fill: #a58a31;
+}
+
+.section-4-child h3 {
+    margin-left: 15px;
+    margin-top: 5px;
+    color: white;
+    font-weight: 500;
+    margin-right: 10px;
+}
+
+.section-4-child p {
+    color: grey;
+    margin-left: 15px;
+    margin-top: 5px;
+    margin-bottom: 25px;
+    font-size: 13px;
+    margin-right: 18px;
+}
+
+
+
+/* Optional Hover Effect to make them feel premium */
+.section-4-child:hover {
+    transform: translateY(-8px);
+
+    box-shadow: 0 20px 40px rgba(165, 138, 49, .18);
+    /* Soft gold undertone glow */
+}
+
+.process-heading {
+    margin-top: 25px;
+    font-size: 2rem;
+    font-weight: 700;
+    margin-bottom: 30px;
+}
+
+.process-section {
+    max-width: 80vw;
+    margin: 0 auto;
+    margin-bottom: 30px;
+}
+
+
+/* Timeline Layout */
+.process-timeline {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    gap: 20px;
+}
+
+.process-step {
+    flex: 1;
+    position: relative;
+}
+
+/* Numbered Circles */
+.step-number {
+    width: 44px;
+    height: 44px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-weight: bold;
+    font-size: 1.1rem;
+    margin-bottom: 20px;
+    background-color: white;
+    color: #1a1a1a;
+    box-sizing: border-box;
+}
+
+/* Dark theme for "active" steps (1 and 3) */
+.process-step.active .step-number {
+    background-color: #1a1a1a;
+    color: #ffffff;
+}
+
+/* Text Content styling */
+.step-heading {
+    font-size: 1.1rem;
+    font-weight: 700;
+    margin: 0 0 8px 0;
+}
+
+.step-description {
+    font-size: 0.85rem;
+    color: #666666;
+    line-height: 1.4;
+    margin: 0;
+    padding-right: 15px;
+}
+
+/* CSS Connecting Arrows */
+.process-step:not(.last-step)::after {
+    content: "";
+    position: absolute;
+    top: 22px;
+    /* Centers vertically with the 44px circle */
+    left: 55px;
+    /* Pushes arrow past the edge of the circle */
+    width: calc(100% - 70px);
+    /* Stretches dynamically toward the next circle */
+    height: 1px;
+    background-color: black;
+}
+
+/* Arrowhead */
+.process-step:not(.last-step)::before {
+    content: "";
+    position: absolute;
+    top: 18px;
+    right: 15px;
+    /* Anchors the tip of the arrow before the next step */
+    width: 8px;
+    height: 8px;
+    border-top: 1px solid black;
+    border-right: 1px solid black;
+    transform: rotate(45deg);
+}
+
+/* Responsive tweaks for smaller screens */
+@media (max-width: 768px) {
+    .process-timeline {
+        flex-direction: column;
+        gap: 40px;
+    }
+
+    .process-step:not(.last-step)::after,
+    .process-step:not(.last-step)::before {
+        display: none;
+        /* Hides horizontal arrows when stacked vertically */
+    }
+}
+
+.our-vision {
+    margin-top: 50px;
+    position: relative;
+    width: 100%;
+    overflow: hidden;
+    /* Keeps the SVG orbits from creating horizontal scrollbars */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 60px 0;
+    /* Gives your content some breathing room top and bottom */
+}
+
+/* 2. Target the inline SVG and lock it to the background */
+.our-vision>svg {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    /* Perfectly centers it in the section */
+    width: 100%;
+    max-width: min(800px, 90vw);
+    /* Keeps the orbits from getting ridiculously large on desktop */
+    height: auto;
+    z-index: 1;
+    /* Places it on the bottom layer */
+    pointer-events: none;
+    /* Allows users to click and select text through the SVG */
+    opacity: 0.6;
+    /* Lowers opacity so your text is highly readable */
+}
+
+/* 3. Pull your content layers to the front */
+.section-5-header,
+.section-5 {
+    position: relative;
+    z-index: 2;
+    /* Forces these sections to sit above the background SVG */
+}
+
+.section-5-header {
+    width: 80vw;
+    justify-self: center;
+}
+
+.section-5-header h2 {
+    justify-self: center;
+    font-size: 2.5rem;
+    margin-top: 50px;
+    margin-bottom: 20px;
+}
+
+.section-5-header p:first-of-type {
+
+    max-width: 60vw;
+    font-size: 1.3rem;
+    line-height: 2rem;
+    text-align-last: center;
+    margin-bottom: 25px;
+    text-align: center;
+    justify-self: center;
+
+}
+
+.section-5-header p:last-of-type {
+    color: rgb(74, 74, 74);
+    font-size: larger;
+    text-align-last: center;
+    text-align: center;
+    justify-self: center;
+    margin-bottom: 40px;
+    max-width: 60vw;
+
+}
+
+.section-5 {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+
+    width: 80%;
+    /* Responsive on smaller screens */
+
+    margin: auto;
+    /* Perfectly centers the grid and adds vertical separation */
+    gap: 24px;
+    /* Clean, equal spacing between all cards */
+}
+
+.section-5-child {
+    background-color: #222222;
+    /* A slightly softer dark gray to match the image */
+    border-radius: 20px;
+    /* Nice, thick rounded corners */
+    padding-right: 20px;
+    padding-bottom: 14px;
+    /* Adds breathing room inside to keep them vertically tall */
+    box-sizing: border-box;
+    /* Ensures padding doesn't break the layout width */
+
+    /* A soft, subtle shadow to mimic the image exactly */
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.4);
+
+    /* Smooth transitions in case you add hover effects later! */
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+/* Optional Hover Effect to make them feel premium */
+.section-5-child:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 15px 35px rgba(165, 138, 49, 0.15);
+    /* Soft gold undertone glow */
+}
+
+
+
+
+.section-5-child img {
+    height: 60px;
+    margin-left: 15px;
+    margin-top: 15px;
+
+}
+
+.section-5-child svg {
+    height: 60px;
+    margin-left: 15px;
+    margin-top: 15px;
+
+}
+
+.section-5-child svg path {
+    fill: #a58a31;
+}
+
+.section-5-child h3 {
+    margin-left: 15px;
+    margin-top: 5px;
+    color: white;
+    font-weight: 500;
+    margin-right: 10px;
+}
+
+.section-5-child p {
+    color: grey;
+    margin-left: 15px;
+    margin-top: 5px;
+    margin-bottom: 25px;
+    font-size: 13px;
+    margin-right: 18px;
+}
+
+footer {
+    background: white;
+    padding-top: 50px;
+
+}
+
+/* 
+.container {
+    width: 80vw;
+    margin: auto;
+    display: flex;
+    justify-content: center;
+} */
+.container {
+    width: 80vw;
+    margin: auto;
+
+    display: flex;
+    justify-content: space-between;
+    gap: 40px;
+    flex-wrap: wrap;
+}
+
+.footer-content {
+    flex: 1;
+    min-width: 220px;
+}
+
+.footer-content {
+    width: 33.3%;
+}
+
+.footer-content h3 {
+    font-size: 20px;
+    margin-bottom: 15px;
+    text-align: center;
+}
+
+.footer-content p {
+    max-width: 250px;
+    margin: auto;
+    line-height: 1.7;
+
+    padding: 7px;
+}
+
+.footer-content ul {
+    text-align: center;
+}
+
+.list {
+    padding: 0;
+}
+
+.list li {
+    width: auto;
+    text-align: center;
+    list-style-type: none;
+    padding: 7px;
+    position: relative;
+
+}
+
+.list li::before {
+    content: '';
+    position: absolute;
+    transform: translate(-50%, -50%);
+    left: 50%;
+    top: 100%;
+    width: 0;
+    height: 2px;
+    background: #f18930;
+    transition-duration: .5s;
+}
+
+.list li:hover::before {
+    width: 70px;
+}
+
+.social-icons {
+    text-align: center;
+    padding: 0;
+}
+
+.social-icons li {
+    display: inline-block;
+    text-align: center;
+    padding: 5px;
+}
+
+.social-icons i {
+    color: rgb(0, 0, 0);
+    font-size: 25px;
+}
+
+.list a {
+    text-decoration: none;
+    color: black;
+}
+
+.list a:hover {
+    color: #a58a31;
+}
+
+.social-icons i:hover {
+    color: #a58a31;
+}
+
+.bottom-bar {
+    background: rgb(8, 8, 8);
+    text-align: center;
+    padding: 1px 0;
+    margin-top: 30px;
+
+}
+
+.bottom-bar-p {
+    text-align: center;
+
+    margin: 0;
+
+    font-size: 16px;
+    padding: 7px;
+}
+
+/* --- Desktop Adjustments for Hidden Mobile Toggle --- */
+.menu-toggle {
+    display: none;
+    /* Hidden on large monitors */
+    background: none;
+    border: none;
+    font-size: 1.5rem;
+    color: black;
+    cursor: pointer;
+    margin-left: 1rem;
+}
+
+/* Make sure positioning contexts work for mobile anchors */
+nav {
+    position: relative;
+}
+
+
+/* --- MOBILE RESPONSIVE MEDIA QUERY --- */
+@media screen and (max-width: 992px) {
+
+    /* 1. Show the hamburger button */
+    .menu-toggle {
+        display: block;
+        order: 3;
+        /* Forces it to stay on the far right */
+    }
+
+    /* Move call-to-action button to center layout on tablet/mobile */
+    .btn {
+        order: 2;
+        padding: 10px 15px;
+        font-size: 0.9rem;
+        margin-left: 15px;
+    }
+
+    /* 2. Re-shape the links wrapper into a dropdown drawer menu */
+    .names {
+        position: absolute;
+        top: 100%;
+        /* Sits cleanly right under the navbar header pill */
+        left: 50%;
+        transform: translateX(-50%) translateY(-20px);
+        /* Centers & hides slightly higher up */
+        width: 100%;
+        background-color: white;
+        border-radius: 20px;
+        box-shadow: 0 10px 25px rgba(0, 0, 0, 0.15);
+        padding: 20px 0;
+        opacity: 0;
+        visibility: hidden;
+        transition: all 0.3s ease-in-out;
+        z-index: 100;
+    }
+
+    /* 3. Dropdown Menu Trigger State when Active */
+    .names.active {
+        opacity: 1;
+        visibility: visible;
+        transform: translateX(-50%) translateY(10px);
+        /* Drops smoothly into view */
+    }
+
+    /* 4. Shift links from Horizontal row into a vertical list stack */
+    .links {
+        flex-direction: column;
+        align-items: center;
+        gap: 1.5rem;
+        margin: 0;
+    }
+
+    /* Disable text zoom/hover grow on touch screens to prevent layout bugs */
+    .links a:hover {
+        font-size: 1.05rem;
+    }
+
+    /* Hide the line animation beneath items on mobile view */
+    .links li::before,
+    .links li:hover::before {
+        display: none;
+    }
+}
+
+.total-width {
+    width: 80vw;
+    max-width: 1400px;
+
+}
+@media(max-width:768px){
+
+.container{
+
+flex-direction:column;
+
+text-align:center;
+
+align-items: center;
+}
+
+.footer-content p{
+
+max-width:none;
+
+}
+
+.social-icons{
+
+justify-content:center;
+
+}
+
+}
+@media (max-width:902px) {
+    .hero-image img{
+        width: 10vw;
+    }
+}
