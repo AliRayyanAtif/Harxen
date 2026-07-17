@@ -30,7 +30,9 @@ html {
     top: 0;
 
 } */
-
+.content-3{
+    display: none;
+}
 nav {
     margin-top: 20px;
     width: 80vw;
@@ -118,13 +120,28 @@ nav {
     width: 80%;
     display: flex;
     justify-self: center;
-}
+    align-items: center;
+    gap: 2rem;
 
+}
+.hero-image,
 .hero-content {
     flex: 1;
     margin-top: 50px;
+    min-width: 0;
+}
+.hero-image img{
+    width: 500px;
+    height: 500px;
+    display: inline-block;
+    margin-top: 30px;
 }
 
+.hero-image img {
+    width: 100%;
+    max-width: 450px;
+    height: auto;
+}
 .content-1 {
     font-weight: 650;
     font-size: clamp(2.2rem, 5vw, 3.4rem);
@@ -139,11 +156,80 @@ nav {
     margin-bottom: 25px;
     font-weight: 500;
 }
+@media (max-width: 910px) {
+    .hero-image img{
+        width: 400px;
+    }
+}
+@media (max-width: 810px) {
+    .hero-image img{
+        width:350px;
+    }
+    .content-2{
+        font-size: 15px;
+    }
+    .content-1{
+        font-size:2.1rem ;
+    }
+}
+@media (max-width: 710px) {
+    .hero-image img{
+        width: 300px;
+    }
+    .content-2{
+        font-size: 14px;
+        line-height: 1.4rem;
+    }
+}
+ @media (max-width: 620px) {
+    .hero-image img{
+        width: 280px;
+    }
+    .content-2{
+        font-size: 12px;
+        line-height: 1.3rem;
+    }
+}
 
-.hero-image img {
-    width: 100%;
-    max-width: 500px;
-    height: auto;
+@media (max-width: 560px) {
+    .hero {
+        position: relative;
+        margin-bottom: 100px;
+        /* overflow: hidden; */
+    }
+
+    .hero-image {
+        position: absolute;
+        inset: 0;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        z-index: 0;
+        opacity: 0.20; /* adjust as needed */
+        pointer-events: none;
+    }
+
+    .hero-image img {
+        margin-top: 50px;
+        width: 80%;
+        max-width: none;
+    }
+
+    .hero-content {
+        position: relative;
+        z-index: 1;
+    }
+
+    .content-2 {
+        display: none;
+    }
+    .content-3{
+        display: block;
+        margin: 25px;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+    }
 }
 
 .btn-2 {
@@ -156,12 +242,6 @@ nav {
     border-color: black;
 }
 
-.hero-image :nth-child(1) {
-    width: 500px;
-    height: 500px;
-    display: inline-block;
-    margin-top: 30px;
-}
 
 .section-2 img {
     width: 100vw;
@@ -174,11 +254,10 @@ nav {
 }
 
 .services h2 {
-    display: flex;
-    justify-self: center;
-    font-size: clamp(2rem, 5vw, 2.8rem);
-    ;
-    margin-top: 50px;
+    /* display: flex; */
+    text-align: center;
+    font-size: clamp(2rem, 5vw, 2.5rem);
+    margin: 50px auto 20px;
 
 }
 
@@ -829,9 +908,4 @@ justify-content:center;
 
 }
 
-}
-@media (max-width:902px) {
-    .hero-image img{
-        width: 10vw;
-    }
 }
