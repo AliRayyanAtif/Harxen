@@ -120,6 +120,7 @@ nav {
     width: 80vw;
     display: flex;
     justify-self: center;
+    margin: auto;
     align-items: center;
     gap: 2rem;
 
@@ -147,6 +148,7 @@ nav {
     font-size: clamp(2.2rem, 5vw, 3.4rem);
     line-height: 1.15;
     flex: 1;
+    margin-left: 20px;
 }
 
 .content-2 {
@@ -155,6 +157,7 @@ nav {
     margin-top: 25px;
     margin-bottom: 25px;
     font-weight: 500;
+    margin-left: 20px;
 }
 @media (max-width: 910px) {
     .hero-image img{
@@ -243,12 +246,12 @@ nav {
 }
 
 
-.section-2 img {
+/* .section-2 img {
     width: 100%;
     margin-top: 50px;
     display: block;
 
-}
+} */
 
 .section-3 {
     width: 80vw;
@@ -416,111 +419,6 @@ nav {
     /* Soft gold undertone glow */
 }
 
-.process-heading {
-    margin-top: 25px;
-    font-size: 2rem;
-    font-weight: 700;
-    margin-bottom: 30px;
-}
-
-.process-section {
-    max-width: 80vw;
-    margin: 0 auto;
-    margin-bottom: 30px;
-}
-
-
-/* Timeline Layout */
-.process-timeline {
-    display: flex;
-    justify-content: space-between;
-    align-items: flex-start;
-    gap: 20px;
-}
-
-.process-step {
-    flex: 1;
-    position: relative;
-}
-
-/* Numbered Circles */
-.step-number {
-    width: 44px;
-    height: 44px;
-    border-radius: 50%;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    font-weight: bold;
-    font-size: 1.1rem;
-    margin-bottom: 20px;
-    background-color: white;
-    color: #1a1a1a;
-    box-sizing: border-box;
-}
-
-/* Dark theme for "active" steps (1 and 3) */
-.process-step.active .step-number {
-    background-color: #1a1a1a;
-    color: #ffffff;
-}
-
-/* Text Content styling */
-.step-heading {
-    font-size: 1.1rem;
-    font-weight: 700;
-    margin: 0 0 8px 0;
-}
-
-.step-description {
-    font-size: 0.85rem;
-    color: #666666;
-    line-height: 1.4;
-    margin: 0;
-    padding-right: 15px;
-}
-
-/* CSS Connecting Arrows */
-.process-step:not(.last-step)::after {
-    content: "";
-    position: absolute;
-    top: 22px;
-    /* Centers vertically with the 44px circle */
-    left: 55px;
-    /* Pushes arrow past the edge of the circle */
-    width: calc(100% - 70px);
-    /* Stretches dynamically toward the next circle */
-    height: 1px;
-    background-color: black;
-}
-
-/* Arrowhead */
-.process-step:not(.last-step)::before {
-    content: "";
-    position: absolute;
-    top: 18px;
-    right: 15px;
-    /* Anchors the tip of the arrow before the next step */
-    width: 8px;
-    height: 8px;
-    border-top: 1px solid black;
-    border-right: 1px solid black;
-    transform: rotate(45deg);
-}
-
-/* Responsive tweaks for smaller screens */
-@media (max-width: 768px) {
-    .process-timeline {
-        flex-direction: column;
-        gap: 40px;
-    }
-
-    .process-step:not(.last-step)::after,
-    .process-step:not(.last-step)::before {
-        display: none;
-        /* Hides horizontal arrows when stacked vertically */
-    }
-}
 
 .our-vision {
     margin-top: 50px;
