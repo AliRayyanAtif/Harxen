@@ -34,6 +34,7 @@ html {
     display: none;
 }
 nav {
+    margin: auto;
     margin-top: 20px;
     width: 80vw;
     padding: 1rem 5%;
@@ -288,6 +289,7 @@ nav {
     width: 80vw;
     justify-self: center;
     gap: 20px;
+    align-items: center;
 }
 
 
@@ -724,10 +726,10 @@ footer {
     margin-left: 1rem;
 }
 
-/* Make sure positioning contexts work for mobile anchors */
+/* Make sure positioning contexts work for mobile anchors
 nav {
     position: relative;
-}
+} */
 
 
 /* --- MOBILE RESPONSIVE MEDIA QUERY --- */
