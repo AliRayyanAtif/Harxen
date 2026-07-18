@@ -504,8 +504,10 @@ nav {
 }
 
 .section-5-header {
-    width: 80vw;
+    width: 100vw;
     justify-self: center;
+    justify-content: center;
+    align-items: center;
 }
 
 .section-5-header h2 {
