@@ -276,7 +276,7 @@ nav {
     /* display: flex; */
     text-align: center;
     font-size: clamp(2rem, 5vw, 2.5rem);
-    margin: 50px auto 20px;
+    margin: 40px auto 20px;
 
 }
 
@@ -343,21 +343,21 @@ nav {
     text-align: center;
     /* display: flex; */
     justify-self: center;
-    font-size: clamp(2rem, 5vw, 2.8rem);
-    margin-top: 50px;
+    font-size: clamp(2rem, 5vw, 2.5rem);
+    margin-top: 65px;
     margin-bottom: 25px;
 }
 
 .section-4-header p {
     display: flex;
     justify-self: center;
+    
     color: rgb(74, 74, 74);
     font-weight: bold;
     font-size: larger;
 
 
     max-width: 80vw;
-    width: 100%;
     margin: auto;
 
 
@@ -444,7 +444,8 @@ nav {
     display: flex;
     flex-direction: column;
     align-items: center;
-    padding: 60px 0;
+    padding: 12px 0;
+    padding-bottom: 80px;
     /* Gives your content some breathing room top and bottom */
 }
 
@@ -817,4 +818,25 @@ justify-content:center;
 
 }
 
+}
+
+
+.section-highlight {
+    animation: highlightHeading 1.5s ease;
+}
+
+@keyframes highlightHeading {
+    0% {
+        color: #a58a31;
+        transform: scale(1.03);
+    }
+
+    50% {
+        color: #a58a31;
+    }
+
+    100% {
+        color: inherit;
+        transform: scale(1);
+    }
 }
