@@ -299,7 +299,7 @@ nav {
 .services h2 {
     /* display: flex; */
     text-align: center;
-    font-size: clamp(2rem, 5vw, 2.5rem);
+    font-size: clamp(1.7rem, 5vw, 2.5rem);
     margin: 40px auto 20px;
 
 }
@@ -313,6 +313,7 @@ nav {
     justify-self: center;
     gap: 20px;
     align-items: center;
+    margin: auto;
 }
 
 
@@ -371,6 +372,8 @@ nav {
     /* display: flex; */
     justify-self: center;
     font-size: clamp(2rem, 5vw, 2.5rem);
+    margin-left: auto;
+    margin-right: auto;
     margin-top: 65px;
     margin-bottom: 25px;
 }
