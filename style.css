@@ -518,17 +518,20 @@ nav {
     font-size: 2.5rem;
     margin-top: 50px;
     margin-bottom: 20px;
+
 }
 
 .section-5-header p:first-of-type {
 
-    max-width: 60vw;
+    width: 80vw;
     font-size: 1.3rem;
     line-height: 2rem;
     text-align-last: center;
     margin-bottom: 25px;
     text-align: center;
     justify-self: center;
+    justify-content: center;
+    align-self: center;
 
 }
 
@@ -539,7 +542,9 @@ nav {
     text-align: center;
     justify-self: center;
     margin-bottom: 40px;
-    max-width: 60vw;
+    width: 80vw;
+    justify-content: center;
+    align-self: center;
 
 }
 
