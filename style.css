@@ -47,7 +47,9 @@ nav {
     justify-content: flex-end;
     align-items: center;
 }
-
+.btn-responsive{
+    display: none;
+}
 /* 
 .links li::before {
     content: '';
@@ -225,7 +227,12 @@ nav {
     .content-1 {
         font-size: 1.7rem;
     }
+    #button-main{
+        font-size: 10px;
+
+    }
 }
+
 
 
 @media (max-width: 500px) {
@@ -242,7 +249,7 @@ nav {
         justify-content: center;
         align-items: center;
         z-index: 0;
-        opacity: 0.20;
+        opacity: 0.30;
         /* adjust as needed */
         pointer-events: none;
     }
@@ -273,6 +280,7 @@ nav {
         justify-content: center;
     }
 }
+
 
 .btn-2 {
     background-color: white;
@@ -787,12 +795,12 @@ nav {
     }
 
     /* Move call-to-action button to center layout on tablet/mobile */
-    .btn {
+    /* .btn {
         order: 2;
         padding: 10px 15px;
         font-size: 0.9rem;
         margin-left: 15px;
-    }
+    } */
 
     /* 2. Re-shape the links wrapper into a dropdown drawer menu */
     .names {
@@ -811,8 +819,15 @@ nav {
         visibility: hidden;
         transition: all 0.3s ease-in-out;
         z-index: 100;
+        
     }
 
+.btn-responsive{
+    display: block;
+}
+#button-main{
+    display: none;
+}
     /* 3. Dropdown Menu Trigger State when Active */
     .names.active {
         opacity: 1;
